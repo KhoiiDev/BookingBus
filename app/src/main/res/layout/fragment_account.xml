@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+
+    <TextView
+        android:id="@+id/textView_phone_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/icons_phone"
+        android:text="Your Phone:  "
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name_user"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <TextView
+        android:id="@+id/textView_location_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/icons_location"
+        android:text="Your address: "
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/textView_phone_user"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <TextView
+        android:id="@+id/textView_id_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/icons_id_card"
+        android:text="Your ID:  "
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/textView_location_user"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <ImageView
+        android:id="@+id/imgageAvatar"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons_user_account" />
+
+    <TextView
+        android:id="@+id/textView_name_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="56dp"
+        android:text="User Name"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/imgageAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_change_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icons_pencil" />
+
+    <TextView
+        android:id="@+id/textView_name_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:drawableLeft="@drawable/icons_name"
+        android:text="Your Name: "
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/imgageAvatar"
+        tools:layout_editor_absoluteX="44dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_main"
+        android:drawableLeft="@drawable/icons_change"
+        android:text="Change Password"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_id_user"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLognout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/button_main"
+        android:text="Đăng Xuất"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_change_password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
